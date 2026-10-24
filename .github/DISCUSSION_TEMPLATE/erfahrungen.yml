@@ -1,0 +1,40 @@
+# The file name must equal the slug of the discussion category "Erfahrungen" (GitHub derives it from the German category name).
+title: "Erfahrung: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Teilen. Bitte so beschreiben, dass niemand auf deine Institution schließen kann.
+  - type: input
+    id: context
+    attributes:
+      label: Kontext ohne Namen
+      description: Art und ungefähre Größe der Institution, deine Rolle
+      placeholder: z. B. Kommune mit rund 800 Beschäftigten, ISB in Teilzeit
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: Ausgangslage
+      description: Was wolltet ihr erreichen, und was war schwierig?
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: Was hat funktioniert, was nicht?
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Bezug zu Grundschutz++ (optional)
+      description: Praktik, Anforderung oder Schritt der Methodik
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Vertraulichkeit
+      options:
+        - label: Mein Beitrag enthält keine Namen, Hostnamen, IP-Adressen, Dienstleisternamen, Schwachstellen oder andere vertrauliche Angaben.
+          required: true
